@@ -19,33 +19,35 @@ layout: home
     </div>
   </div>
 
-  {%- for post in site.posts -%}
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 my-5">
+    {%- for post in site.posts -%}
     <div class="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
-      <a href="#" class="w-full block h-full">
-        <img alt="" src="/images/success/{{ post.img }}"
-         class="max-h-40 w-full object-cover"/>
-        <div class="bg-white dark:bg-gray-800 w-full p-4">
-          <p class="text-gray-800 dark:text-white text-xl font-medium mb-2">
-            {{ post.title | escape }}
-          </p>
-          <p class="text-gray-400 dark:text-gray-300 font-light text-md">
-            <div class="mt-6 post-content">{{ post.excerpt }}</div>
-            <!-- <div class="mt-10">
-              <a class="text-blue-500 uppercase text-sm tracking-wide font-black content-link" 
-              href="{{ post.url | relative_url }}">Read More</a>
-            </div> -->
-          </p>
-          <div class="flex items-center mt-4">
-            <div class="flex flex-col justify-between ml-4 text-sm">
-              <p class="text-gray-400 dark:text-gray-300">
-                {{ post.date | date: "%b %-d, %Y" }}
-              </p>
-            </div>
+      <div class="text-center mb-4 opacity-90">
+        {%- if post.img -%}
+        <img alt="avatar" src="/images/success/{{ post.img }}"
+          class="mx-auto object-cover rounded-full h-40 w-40 "/>
+        {%- endif -%}
+      </div>
+      <div class="bg-white dark:bg-gray-800 w-full p-4">
+        <p class="text-gray-800 dark:text-white text-xl font-medium mb-2">
+          {{ post.title | escape }}
+        </p>
+        <p class="text-gray-400 dark:text-gray-300 font-light text-md">
+          <div class="mt-6 post-content">{{ post.excerpt }}</div>
+          <!-- <div class="mt-10">
+            <a class="text-blue-500 uppercase text-sm tracking-wide font-black content-link" 
+            href="{{ post.url | relative_url }}">Read More</a>
+          </div> -->
+        </p>
+        <div class="flex items-center mt-4">
+          <div class="flex flex-col justify-between ml-4 text-sm">
+            <p class="text-gray-400 dark:text-gray-300">
+              {{ post.date | date: "%b %-d, %Y" }}
+            </p>
           </div>
         </div>
-      </a>
+      </div>
     </div>
+    {%- endfor -%}
   </div>
-  {%- endfor -%}
 </div>
