@@ -1,38 +1,24 @@
 ---
 layout: faq
 title: Resources
+faq:
+    - head: Troubleshooting
+      list:
+        - Make sure to omit any passwords, API keys, or other sensitive information
+        - mailing lists or IRC channels for local user groups or projects
+        - Hacker Hours Discord / <a href="https://hackerhours.org/contact.html#mailing-list">mailing list</a>
+        - <a href="http://www.codinghorror.com/blog/2012/03/rubber-duck-problem-solving.html">Rubber Duck Problem Solving</a>
+        - <a href="https://stackoverflow.com/">Stack Overflow</a> (Q&A)
+        - After posting a question to S.O., you are welcome to send the link to the mailing list (hackerhours-list@meetup.com) with a brief description. That way, you can potentially get an answer sooner (and from more people) than contacting a mentor directly, and the discussion/solution benefits others.
+
+    - head: Independent Learning
+      list:
+        - <a href="http://www.bento.io/">Bento</a>
+        - <a href="http://codebuddies.org/?rc=hh">Code Buddies</a>
+        - <a href="http://blog.codecrew.co/">Code Crew blog</a>
+        - <a href="http://www.codenewbie.org/">CodeNewbie</a>
+        - <a href="https://github.com/EbookFoundation/free-programming-books/blob/master/README.md">List of Free Programming Books</a>
+        - <a href="https://roadmap.sh/">Roadmaps for Developers</a>
+        - <a href="http://teachyourselftocode.com/">Teach Yourself to Code</a> (list of coding resources by topic)
+
 ---
-
-<li class="w-2/5">
-    <p class="text-lg font-medium leading-6 text-gray-900">
-        Troubleshooting
-    </p>
-    <p class="mt-2">
-        <p class="text-base leading-6 text-gray-500">
-            Make sure to omit any passwords, API keys, or other sensitive information.
-
-* mailing lists or IRC channels for local user groups or projects
-* Hacker Hours Slack / mailing list
-* Rubber Duck Problem Solving
-* Stack Overflow (Q&A)
-    *  After posting a question to S.O., you are welcome to send the link to the mailing list (hackerhours-list@meetup.com) with a brief description. That way, you can potentially get an answer sooner (and from more people) than contacting a mentor directly, and the discussion/solution benefits others.
-        </p>
-    </p>
-</li>
-
-<li class="w-2/5">
-    <p class="text-lg font-medium leading-6 text-gray-900">
-        Independent Learning
-    </p>
-    <p class="mt-2">
-        <p class="text-base leading-6 text-gray-500">
-* Bento
-* Code Buddies
-* Code Crew blog
-* CodeNewbie
-* List of Free Programming Books
-* Roadmaps for Developers
-* Teach Yourself to Code (list of coding resources by topic)
-        </p>
-    </p>
-</li>
